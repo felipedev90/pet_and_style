@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
+/*
 .hero {
     min-height: 600px;
     background: url("../images/hero_bg_1000px.webp");
     background-size: cover;
-    background-position: center center;
+    background-position: top top;
     background-repeat: no-repeat;
-}
+}   
+*/
