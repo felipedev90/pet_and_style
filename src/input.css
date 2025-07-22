@@ -1,11 +1,5 @@
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-/*
-.hero {
-    min-height: 600px;
-    background: url("../images/hero_bg_1000px.webp");
-    background-size: cover;
-    background-position: top top;
-    background-repeat: no-repeat;
-}   
-*/
+@import "./fonts.css";
