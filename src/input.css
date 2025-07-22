@@ -1,5 +1,18 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
-@import "./fonts.css";
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poiret One";
+  src: url("../fonts/PoiretOne-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@theme {
+  --font-pacifico: Pacifico, "sans-serif";
+  --font-poiret: Poiret One, "sans-serif";
+}
