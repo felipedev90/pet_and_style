@@ -11,23 +11,38 @@
       <div
         class="flex justify-between flex-row items-center p-4 text-white max-w-7xl mx-auto w-full"
       >
-        <h2 class="font-pacifico">teste</h2>
-        <h1 class="text-3xl sm:text-xl md:text-xl lg:text-4xl font-bold">
+        <h1
+          class="font-pacifico font-thin sm:text-xl md:text-2xl lg:text-4xl pr-4"
+        >
           Pet&Style
         </h1>
         <nav class="flex flex-row items-center justify-center space-x-5">
-          <a href="#" class="font-poiret">Produtos</a>
-          <a href="#" class="font-poiret">Depoimentos</a>
-          <a href="#" class="font-poiret">contato</a>
-          <div class="flex flex-row items-center gap-2">
+          <a
+            href="#produtos"
+            class="font-poiret font-bold sm:text-base md:text-lg lg:text-xl"
+            >Produtos</a
+          >
+          <a
+            href="#"
+            class="font-poiret font-bold sm:text-base md:text-lg lg:text-xl"
+            >Depoimentos</a
+          >
+          <a
+            href="#"
+            class="font-poiret font-bold sm:text-base md:text-lg lg:text-xl"
+            >contato</a
+          >
+          <div
+            class="flex flex-row items-center sm:text-base md:text-lg lg:text-xl"
+          >
             <a href="#"
               ><img src="/images/Search_icon_25px.png" alt="search_icon"
             /></a>
             <input
               type="text"
               required
-              placeholder="Digite o nome do produto"
-              class="w-50 h-6 border border-sky-100 rounded-md p-1"
+              placeholder="Buscar..."
+              class="w-50 h-6 border border-sky-100 rounded-md p-2"
             />
           </div>
         </nav>
@@ -35,37 +50,31 @@
     </header>
     <section>
       <div class="min-h-40 min-w-100 bg-linear-to-b from-sky-800 to-white">
-        <picture class="flex justify-center">
-          <source
-            media="(max-width: 768px)"
-            src="/images/hero_pets_900px.png"
-          />
-          <source
-            media="(min-width: 1024px)"
-            src="/images/hero_pets_1200px.png"
-          />
-          <img src="/images/hero_pets_1600px.png" alt="imagem_gato" />
-        </picture>
-        <div class="flex flex-col justify-center items-center p-4">
+        <div class="text-white flex items-center justify-center flex-col pt-6">
           <h2
-            class="font-sans font-bold text-base sm:text-2xl md:text-3xl lg:text-4xl"
+            class="font-pacifico font-thin text-3xl sm:text-xl md:text-xl lg:text-4xl pt-6"
           >
             Estilo e conforto para seu pet
           </h2>
+          <p
+            class="font-pacifico font-thin text-3xl sm:text-xl md:text-xl lg:text-4xl pt-2"
+          >
+            Charme e personalidade é aqui!
+          </p>
         </div>
-        <p
-          class="font-sans font-bold text-base text-center sm:text-2xl md:text-3xl lg:text-4xl"
-        >
-          Charme e personalidade é aqui!
-        </p>
+        <picture class="flex justify-center">
+          <source
+            media="(max-width: 640px)"
+            src="/images/hero_pets_900px.png"
+          />
+          <img src="/images/hero_pets_1200px.png" alt="imagem_pets" />
+        </picture>
       </div>
     </section>
 
     <section id="produtos">
       <div class="flex justify-center items-center m-2 p-2">
-        <h2
-          class="font-sans font-bold text-base sm:text-2xl md:text-3xl lg:text-4xl"
-        >
+        <h2 class="font-pacifico sm:text-xl md:text-xl lg:text-4xl">
           Produtos para seu amigo Cão
         </h2>
         <picture>
@@ -74,145 +83,181 @@
         </picture>
       </div>
       <div
-        class="grid grid-cols-[minmax(30px,_1fr)_minmax(30px,_1fr)_minmax(30px,_1fr)] gap-4"
+        class="grid grid-cols-[minmax(30px,_400px)_minmax(30px,_400px)_minmax(30px,_400px)] gap-1 px-10"
       >
-        <div
-          class="flex justify-center items-center flex-col border-1 border-solid shadow-md py-2"
-        >
+        <div class="flex justify-center items-center flex-col shadow-2xl py-2">
           <picture>
-            <img src="/images/teste_shampoo_dog" alt="coleira_SmartPet" />
+            <source
+              media="(max-width: 640px)"
+              src="/images/produtos_shampoo_dog_300px.webp"
+            />
+            <img
+              src="/images/produtos_shampoo_dog_480px.webp"
+              alt="coleira_SmartPet"
+              class="w-75 aspect-square object-contain"
+            />
           </picture>
-          <h2 class="text-center font-bold text-xl p-1">
+          <h2 class="text-center text-lg font-bold p-1">
             Shampoo Antialérgico Pelesensível+
           </h2>
-          <p class="text-center py-1 px-2">
+          <p class="text-center text-sm py-1 px-2">
             Cuide da pele do seu pet com carinho. Fórmula hipoalergênica e sem
             parabenos, ideal para cães com pele sensível. Fragrância suave de
             camomila.
           </p>
-          <button
-            class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+          <a
+            href="#"
+            class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
           >
-            <a href="#">Saiba mais</a>
-          </button>
+            Saiba mais
+          </a>
         </div>
-        <div
-          class="flex justify-center items-center flex-col border-1 border-solid shadow-md py-2"
-        >
+        <div class="flex justify-center items-center flex-col shadow-2xl py-2">
           <picture>
-            <img src="/images/teste_cama_dog" alt="coleira_SmartPet" />
+            <source
+              media="(max-width: 640px)"
+              src="/images/produtos_cama_dog_300px.webp"
+            />
+            <img
+              src="/images/produtos_cama_dog_480px.webp"
+              alt="coleira_SmartPet"
+              class="w-75 aspect-square object-contain"
+            />
           </picture>
-          <h2 class="text-center font-bold text-xl p-1">
+          <h2 class="text-center text-lg font-bold p-1">
             Cama Ortopédica NuvemPet
           </h2>
-          <p class="text-center py-1 px-2">
+          <p class="text-center text-sm py-1 px-2">
             Maciez e suporte para um sono tranquilo. Espuma ortopédica e tecido
             respirável, perfeita para cães de todas as idades, especialmente os
             mais velhinhos.
           </p>
-          <button
-            class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+          <a
+            href="#"
+            class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
           >
-            <a href="#">Saiba mais</a>
-          </button>
+            Saiba mais
+          </a>
         </div>
-        <div
-          class="flex justify-center items-center flex-col border-1 border-solid shadow-md py-2"
-        >
+        <div class="flex justify-center items-center flex-col shadow-2xl py-2">
           <picture>
-            <img src="/images/teste_petisco_dog.webp" alt="coleira_SmartPet" />
+            <source
+              media="(max-width: 640px)"
+              src="/images/produtos_petisco_dog_300px.webp"
+            />
+            <img
+              src="/images/produtos_petisco_dog_480px.webp"
+              alt="coleira_SmartPet"
+              class="w-75 aspect-square object-contain"
+            />
           </picture>
-          <h2 class="text-center font-bold text-xl p-1">
+          <h2 class="text-center text-lg font-bold p-1">
             Petisco Natural Just de Frango
           </h2>
-          <p class="text-center py-1 px-2">
+          <p class="text-center text-sm py-1 px-2">
             Deliciosos e saudáveis! Petiscos 100% naturais, sem corantes ou
             conservantes. Crocantes por fora e macios por dentro — o lanche
             favorito do seu cão!
           </p>
-          <button
-            class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+          <a
+            href="#"
+            class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
           >
-            <a href="#">Saiba mais</a>
-          </button>
+            Saiba mais
+          </a>
         </div>
       </div>
 
-      <div class="flex justify-center items-center m-auto p-2">
-        <h2
-          class="font-sans font-bold text-base sm:text-2xl md:text-3xl lg:text-4xl"
-        >
+      <div class="flex justify-center items-center m-2 pt-9 p-2">
+        <h2 class="font-pacifico sm:text-xl md:text-xl lg:text-4xl">
           Produtos para seu amigo Gato
         </h2>
         <picture>
-          <source media="(max-width: )" srcset="" />
-          <img src="/images/produtos_cat_100px.webp" alt="img_cachorro"">
+          <img src="/images/produtos_cat_100px.webp" alt="img_gato"">
         </picture>
       </div>
       <div
-        class="grid grid-cols-[minmax(30px,_1fr)_minmax(30px,_1fr)_minmax(30px,_1fr)] gap-4"
+        class="grid grid-cols-[minmax(30px,_400px)_minmax(30px,_400px)_minmax(30px,_400px)] gap-1 px-10"
       >
-        <div
-          class="flex justify-center items-center flex-col border-1 border-solid shadow-md py-2"
-        >
+        <div class="flex justify-center items-center flex-col shadow-2xl py-2">
           <picture>
+            <source
+              media="(max-width: 640px)"
+              src="/images/produtos_arranhador_cat_300px.webp"
+            />
             <img
-              src="/images/teste_arranhador_cat.webp"
-              alt="coleira_SmartPet"
+              src="/images/produtos_arranhador_cat_480px.webp"
+              alt="Arranhador+Deluxe"
+              class="w-75 aspect-square object-contain"
             />
           </picture>
-          <h2 class="text-center font-bold text-xl p-1">
+          <h2 class="text-center text-lg font-bold p-1">
             Arranhador Torre Felina Deluxe
           </h2>
-          <p class="text-center py-1 px-2">
+          <p class="text-center text-sm py-1 px-2">
             Diversão e conforto em um só lugar! Estrutura com múltiplos níveis,
             tecido sisal resistente e toquinha aconchegante para sonecas
             tranquilas.
           </p>
-          <button
-            class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+          <a
+            href="#"
+            class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
           >
-            <a href="#">Saiba mais</a>
-          </button>
+            Saiba mais
+          </a>
         </div>
-        <div
-          class="flex justify-center items-center flex-col border-1 border-solid shadow-md py-2"
-        >
+        <div class="flex justify-center items-center flex-col shadow-2xl py-2">
           <picture>
-            <img src="/images/teste_ração_cat.webp" alt="coleira_SmartPet" />
+            <source
+              media="(max-width: 640px)"
+              src="/images/produtos_racao_cat_300px.webp"
+            />
+            <img
+              src="/images/produtos_racao_cat_480px.webp"
+              alt="Ração_NutriGato"
+              class="w-75 aspect-square object-contain"
+            />
           </picture>
-          <h2 class="text-center font-bold text-xl p-1">
-            Ração Premium NutriGato+
+          <h2 class="text-center text-lg font-bold p-1">
+            Ração Premium NutriGato+ Filhote
           </h2>
-          <p class="text-center py-1 px-2">
+          <p class="text-center text-sm py-1 px-2">
             Nutrição completa para gatos exigentes. Fórmula balanceada com ômega
             3, taurina e proteínas de alta qualidade. Mais saúde, brilho e
             vitalidade!
           </p>
-          <button
-            class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+          <a
+            href="#"
+            class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
           >
-            <a href="#">Saiba mais</a>
-          </button>
+            Saiba mais
+          </a>
         </div>
-        <div
-          class="flex justify-center items-center flex-col border-1 border-solid shadow-md py-2"
-        >
+        <div class="flex justify-center items-center flex-col shadow-2xl py-2">
           <picture>
-            <img src="/images/teste_laser_cat" alt="coleira_SmartPet" />
+            <source
+              media="(max-width: 640px)"
+              src="/images/produtos_laser_cat_300px.webp"
+            />
+            <img
+              src="/images/produtos_laser_cat_480px.webp"
+              alt="laser_cat"
+              class="w-75 aspect-square object-contain"
+            />
           </picture>
-          <h2 class="text-center font-bold text-xl p-1">
+          <h2 class="text-center text-lg font-bold p-1">
             Brinquedo Interativo Caça ao Laser
           </h2>
-          <p class="text-center py-1 px-2">
+          <p class="text-center text-sm py-1 px-2">
             Estimule o instinto caçador do seu gato! Laser com movimentos
             aleatórios para manter seu felino ativo e entretido por horas.
           </p>
-          <button
-            class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+          <a
+            href="#"
+            class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
           >
-            <a href="#">Saiba mais</a>
-          </button>
+            Saiba mais
+          </a>
         </div>
       </div>
     </section>
