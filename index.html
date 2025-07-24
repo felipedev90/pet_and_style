@@ -16,35 +16,22 @@
         >
           Pet&Style
         </h1>
-        <nav class="flex flex-row items-center justify-center space-x-5">
+        <nav class="flex flex-row items-center justify-center gap-2 lg:gap-5">
           <a
             href="#produtos"
             class="font-poiret font-bold sm:text-base md:text-lg lg:text-xl"
             >Produtos</a
           >
           <a
-            href="#"
+            href="#depoimentos"
             class="font-poiret font-bold sm:text-base md:text-lg lg:text-xl"
             >Depoimentos</a
           >
           <a
-            href="#"
+            href="#contato"
             class="font-poiret font-bold sm:text-base md:text-lg lg:text-xl"
             >contato</a
           >
-          <div
-            class="flex flex-row items-center sm:text-base md:text-lg lg:text-xl"
-          >
-            <a href="#"
-              ><img src="/images/Search_icon_25px.png" alt="search_icon"
-            /></a>
-            <input
-              type="text"
-              required
-              placeholder="Buscar..."
-              class="w-50 h-6 border border-sky-100 rounded-md p-2"
-            />
-          </div>
         </nav>
       </div>
     </header>
@@ -52,14 +39,14 @@
       <div class="min-h-40 min-w-100 bg-linear-to-b from-sky-800 to-white">
         <div class="text-white flex items-center justify-center flex-col pt-6">
           <h2
-            class="font-pacifico font-thin text-3xl sm:text-xl md:text-xl lg:text-4xl pt-6"
+            class="font-pacifico sm:text-xl sm:py-1 md:text-2xl lg:text-6xl py-6 px-4"
           >
             Estilo e conforto para seu pet
           </h2>
           <p
-            class="font-pacifico font-thin text-3xl sm:text-xl md:text-xl lg:text-4xl pt-2"
+            class="font-pacifico font-thin sm:text-xl md:text-2xl lg:text-5xl pt-2 px-4"
           >
-            Charme e personalidade é aqui!
+            é aqui!
           </p>
         </div>
         <picture class="flex justify-center">
@@ -74,7 +61,7 @@
 
     <section id="produtos">
       <div class="flex justify-center items-center m-2 p-2">
-        <h2 class="font-pacifico sm:text-xl md:text-xl lg:text-4xl">
+        <h2 class="font-pacifico text-base sm:text-3xl md:text-4xl lg:text-5xl">
           Produtos para seu amigo Cão
         </h2>
         <picture>
@@ -169,7 +156,7 @@
       </div>
 
       <div class="flex justify-center items-center m-2 pt-9 p-2">
-        <h2 class="font-pacifico sm:text-xl md:text-xl lg:text-4xl">
+        <h2 class="font-pacifico text-base sm:text-3xl md:text-4xl lg:text-5xl">
           Produtos para seu amigo Gato
         </h2>
         <picture>
@@ -262,70 +249,75 @@
       </div>
     </section>
 
-    <section id="Depoimentos">
+    <section id="depoimentos">
       <h2
-        class="font-sans font-bold text-center text-base sm:text-2xl md:text-3xl lg:text-4xl p-4"
+        class="font-pacifico text-center text-base sm:text-2xl md:text-3xl lg:text-4xl p-4"
       >
         Depoimentos de nossos clientes
       </h2>
-      <div class="bg-sky-800 py-6 grid grid-cols-6 gap-4 p-3">
-        <div class="border-b border-black col-span-4 col-start-2">
-          <p class="text-white py-2 px-5">
+      <div
+        class="grid justify-center grid-cols-[minmax(30px,_250px)_minmax(30px,_250px)_minmax(30px,_250px)] gap-8 p-5 bg-sky-800"
+      >
+        <div class="flex flex-col m-auto rounded-xl shadow-2xl">
+          <p class="text-white sm:text-sm text-center p-2 lg:px-5">
             "Já testei vários lugares, mas nenhum se compara a esse. Entrega
-            rápida e pontual. Profissionais atenciosos e cuidadosos. Super
+            rápida e pontual. Profissionais atenciosos e cuidadosos. <br />Super
             recomendo!"
           </p>
-          <h3 class="font-bold italic text-end px-4">
-            Mariana Souza <br />
+          <p class="text-white font-bold italic text-end sm:text-sm p-4">
+            Mariana S. <br />
             Tutora da Mel
-          </h3>
+          </p>
         </div>
-        <div class="border-b border-black col-span-4 col-start-2">
-          <p class="text-white py-2 px-5">
+        <div class="flex flex-col m-auto rounded-xl shadow-2xl">
+          <p class="text-white sm:text-sm text-center p-2 lg:px-5">
             "Produtos de qualidade, serviço ágil e o Max sempre é tratado com
             carinho. Além disso, o ambiente é lindo e super organizado. Ganharam
             um cliente fiel!"
           </p>
-          <h3 class="font-bold italic text-end px-4">
-            Carlos Henrique <br />
+          <p class="text-white font-bold italic text-end sm:text-sm p-4">
+            Carlos H. <br />
             Tutor do Max
-          </h3>
+          </p>
         </div>
-        <div class="col-span-4 col-start-2">
-          <p class="text-white py-2 px-5">
+        <div class="flex flex-col m-auto rounded-xl shadow-2xl">
+          <p class="text-white sm:text-sm text-center p-2 lg:px-5">
             "Levo meu cãozinho aqui desde filhote. Atendimento impecável,
             ambiente limpo e equipe que realmente ama os animais. O Thor sempre
             sai mais bonito e feliz!"
           </p>
-          <h3 class="font-bold italic text-end px-4">
-            João Mendes
+          <p class="text-white font-bold italic text-end sm:text-sm p-4">
+            João M.
             <br />Tutor do Thor
-          </h3>
+          </p>
         </div>
       </div>
     </section>
 
     <section id="contato">
       <h2
-        class="text-white font-sans font-bold text-center text-base bg-sky-800 sm:text-2xl md:text-3xl lg:text-4xl py-5"
+        class="font-pacifico text-center text-base bg-sky-800 sm:text-2xl md:text-3xl lg:text-4xl py-5"
       >
         Entre em Contato
       </h2>
       <div
-        class="m-auto bg-linear-to-b from-sky-800 to-white flex flex-row justify-center g-5"
+        class="bg-linear-to-b from-sky-800 to-white flex flex-col lg:flex-row justify-center gap-14 sm:gap-4"
       >
-        <div class="flex flex-col justify-center items-center p-4 m-4">
+        <div
+          class="flex flex-col justify-center items-center rounded-xl shadow-md p-4 m-4"
+        >
+          <picture>
+            <img src="/images/contato_bird_300px.png" alt="passaro_contato" />
+          </picture>
           <p><strong>Email:</strong> contato@meusitepet.com.br</p>
           <p><strong>Telefone:</strong> (11)91234-5678</p>
         </div>
 
-        <div class="flex flex-col justify-center p-4">
-          <p class="text-white text-center">
-            Ficou com dúvidas ou deseja agendar um serviço?
-          </p>
-          <p class="text-white text-center">
-            Envie uma mensagem, será um prazer conversar com você!
-          </p>
+        <div
+          class="flex flex-col justify-center items-center lg:items-start rounded-xl shadow-md p-4 m-4"
+        >
+          <p class="">Ficou com dúvidas ou deseja agendar um serviço?</p>
+          <p class="">Envie uma mensagem, será um prazer conversar com você!</p>
           <br />
           <h2 class=""><strong>Formulário de Contato:</strong></h2>
           <form>
@@ -344,12 +336,12 @@
             >
             </textarea>
             <br />
-            <button
-              type="submit"
-              class="text-white bg-sky-800 border-1 rounded-2xl py-1 px-2 shadow-md"
+            <a
+              href="#"
+              class="text-white bg-sky-800 rounded-xl py-1 px-3 text-sm mb-0"
             >
-              <a href="#">Enviar mensagem</a>
-            </button>
+              Enviar
+            </a>
           </form>
         </div>
       </div>
@@ -360,16 +352,15 @@
         class="bg-sky-800 text-white flex flex-row justify-center items-center gap-5 p-3"
       >
         <div class="flex flex-col items-center justify-center text-center p-4">
-          <h2>Pet&Style</h2>
-          <p>
-            Cuidando do estilo e bem-estar do seu pet <br />com amor e carinho.
-          </p>
+          <h2 class="font-pacifico text-2xl">Pet&Style</h2>
+          <p class="font-poiret">Cuidando do estilo e bem-estar do seu pet.</p>
         </div>
         <div>
-          <p>
-            📍 Endereço: Rua dos Bichinhos, 123 – São Paulo/SP <br />
-            📧 E-mail: contato@meusitepet.com.br <br />
-            📱 Telefone: (11) 91234-5678
+          <p class="font-poiret">
+            📍 <strong>Endereço:</strong> Rua dos Bichinhos, 123 – São Paulo/SP
+            <br />
+            📧 <strong>E-mail:</strong> contato@meusitepet.com.br <br />
+            📱 <strong>Telefone:</strong> (11) 91234-5678
           </p>
         </div>
       </div>
