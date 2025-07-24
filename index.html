@@ -45,7 +45,11 @@
         </div>
         <picture class="flex justify-center">
           <source media="(max-width: 640px)" src="images/hero_pets_900px.png" />
-          <img src="images/hero_pets_1200px.png" alt="imagem_pets" />
+          <img
+            src="images/hero_pets_1200px.png"
+            alt="imagem_pets"
+            class="w-full max-w-[100%] object-cover"
+          />
         </picture>
       </div>
     </section>
@@ -354,7 +358,7 @@
             Envie uma mensagem, será um prazer conversar com você!
           </p>
           <br />
-          <form class="max-w-96">
+          <form class="w-full max-w-md px-4">
             <label
               for="name"
               class="italic text-xs sm:text-xs md:text-sm lg:text-base p-1"
@@ -382,9 +386,8 @@
             <br />
             <textarea
               rows="5"
-              cols="40"
               required
-              class="border border-black rounded-md"
+              class="w-full border border-black rounded-md"
             >
             </textarea>
             <br />
