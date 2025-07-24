@@ -255,6 +255,9 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-96 {
+    max-width: calc(var(--spacing) * 96);
+  }
   .min-w-100 {
     min-width: calc(var(--spacing) * 100);
   }
